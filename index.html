@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>service name | service description</title>
+  <meta name="description" content="service description">
+  <meta property="og:title" content="service name | service description">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://url.com">
+  <meta property="og:image" content="https://url.com/img/og-image.png">
+  <meta property="og:site_name" content="jservice name | service description">
+  <meta property="og:description" content="service description">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@0.44.1/dist/material-components-web.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.2.6/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.2.6/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <aside class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__header">
+      <button class="mdc-drawer__close-button"><i class="material-icons" aria-hidden="true">close</i></button>
+      <p class="mdc-drawer__title"><img src="img/logo.svg" alt="jopus career" class="drawer-logo"></p>
+    </div>
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <a class="mdc-list-item" href="#topPanel" tabindex="-1">トップ</a>
+        <a class="mdc-list-item" href="#section2" tabindex="-1">セクション２</a>
+        <a class="mdc-list-item" href="#section3" tabindex="-1">セクション３</a>
+        <hr class="mdc-list-divider">
+        <a class="mdc-list-item" href="#section4" tabindex="-1">セクション４</a>
+        <a class="mdc-list-item" href="#section5" tabindex="-1">セクション５</a>
+        <hr class="mdc-list-divider">
+        <a class="mdc-list-item" href="#section6" tabindex="-1">セクション６</a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-scrim"></div>
+
+  <main class="main-content" id="main-content">
+    <header id="app-bar" class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <a class="header__title-link" href="/">
+            <div class="header__leading-icon"></div>
+            <h1 class="header__title">
+              <img src="img/logo.svg" alt="">
+            </h1>
+          </a>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+          <nav class="header-nav">
+            <a href="#topPanel" class="header-nav__item">トップ</a>
+            <a href="#section2" class="header-nav__item">セクション２</a>
+            <a href="#section3" class="header-nav__item">セクション３</a>
+            <a href="#section4" class="header-nav__item">セクション４</a>
+            <a href="#section5" class="header-nav__item">セクション５</a>
+            <a href="#section6" class="header-nav__item">セクション６</a>
+            <a class="mdc-button mdc-button--raised header-nav__item--cta" data-mdc-auto-init="MDCRipple" href="#">問い合わせる</a>
+          </nav>
+        </section>
+      </div>
+    </header>
+
+    <div class="top-panel" id="topPanel">
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5 top-panel__left">
+            <h1 class="top-panel__title">ベネフィットを伝える<br>コピー</h1>
+            <div class="top-panel__points">
+              <div class="top-panel__points__item">
+                <p>簡単<br>スカウト</p>
+              </div>
+              <div class="top-panel__points__item">
+                <p>低コスト</p>
+              </div>
+              <div class="top-panel__points__item">
+                <p>ビザ<br>サポート</p>
+              </div>
+            </div>
+            <div class="top-panel__cta">
+              <a class="mdc-button mdc-button--raised top-panel__cta__btn" data-mdc-auto-init="MDCRipple" href="#contact">問い合わせる</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section2" id="section2">
+      <div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+        <div class="section-header">
+          <h2>セクション２</h2>
+        </div>
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 section2__box">
+            <h3 class="section2__box__headline">困りごとテキスト１</h3>
+            <img src="img/image.svg" class="section2__box__image">
+            <p class="section2__box__text">困りごとの詳細文章困りごとの詳細文章困りごとの詳細文章困りごとの詳細文章。</p>
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 section2__box">
+            <h3 class="section2__box__headline">困りごとテキスト２</h3>
+            <img src="img/image.svg" class="section2__box__image">
+            <p class="section2__box__text">困りごとの詳細文章困りごとの詳細文章困りごとの詳細文章困りごとの詳細文章。</p>
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 section2__box">
+            <h3 class="section2__box__headline">困りごとテキスト３</h3>
+            <img src="img/image.svg" class="section2__box__image">
+            <p class="section2__box__text">困りごとの詳細文章困りごとの詳細文章困りごとの詳細文章困りごとの詳細文章。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section3" id="section3">
+      <div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+        <div class="section-header">
+          <h2>セクション３</h2>
+        </div>
+
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+            <img src="img/image.svg" class="">
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+            <p class="">特徴テキスト１</p>
+            <p class="">特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。</p>
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+          </div>
+        </div>
+
+        <div class="mdc-layout-grid__inner mdc-layout-grid__inner--reverse">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+            <img src="img/image.svg" class="">
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+            <p class="">特徴テキスト１</p>
+            <p class="">特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。</p>
+          </div>
+          <div class=" mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section4" id="section4">
+      <div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+        <div class="section-header">
+          <h2>セクション４</h2>
+        </div>
+        <div class="mdc-tab-bar" role="tablist">
+          <div class="mdc-tab-scroller">
+            <div class="mdc-tab-scroller__scroll-area">
+              <div class="mdc-tab-scroller__scroll-content">
+                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+                    <span class="mdc-tab__text-label">タブ１</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">shop</span>
+                    <span class="mdc-tab__text-label">タブ２</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">face</span>
+                    <span class="mdc-tab__text-label">タブ３</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content content--active">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+              <img src="img/image.svg" class="">
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+              <p class="">タブ１の内容</p>
+              <p class="">特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。</p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+              <img src="img/image.svg" class="">
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+              <p class="">タブ２の内容</p>
+              <p class="">特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。</p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+              <img src="img/image.svg" class="">
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+              <p class="">タブ３の内容</p>
+              <p class="">特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。特徴詳細文章。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section5" id="section5">
+      <div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+        <div class="section-header">
+          <h2>セクション５</h2>
+        </div>
+
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <div class="glide">
+              <div data-glide-el="track" class="glide__track">
+                <ul class="glide__slides">
+                  <li class="glide__slide">あああああ</li>
+                  <li class="glide__slide">いいいいい</li>
+                  <li class="glide__slide">ううううう</li>
+                </ul>
+              </div>
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div>
+              <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section6" id="section6">
+      <div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+        <div class="section-header">
+          <h2>セクション６</h2>
+        </div>
+
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <button id="open-dialog-1" class="mdc-button mdc-button--raised mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple">ダイアログを開く</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="section7" id="section7">
+      <div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+        <div class="section-header">
+          <h2>セクション７</h2>
+        </div>
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+            <form class="contact-form has-validation-callback" id="contactForm" name="contactform">
+
+
+
+              <div class="temporaly text-input text-field">
+                <label class="text-field__label" for="fullName">お名前<span class="marker--required">必須</span></label>
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label">
+                  <input id="fullName" type="text" class="mdc-text-field__input" aria-label="Label" name="お名前" size="30" data-validation="required" data-validation-error-msg-required="必須項目です" placeholder="（例）山田　太郎">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="temporaly text-input text-field">
+                <label class="text-field__label" for="kana">ふりがな<span class="marker--required">必須</span></label>
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label">
+                  <input id="kana" type="text" class="mdc-text-field__input" aria-label="Label" name="ふりがな" size="30" data-validation="required" data-validation-error-msg-required="必須項目です" placeholder="（例）やまだ　たろう">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="temporaly text-input text-field">
+                <label class="text-field__label" for="companyName">会社名<span class="marker--required">必須</span></label>
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label">
+                  <input id="companyName" type="text" class="mdc-text-field__input" aria-label="Label" name="会社名" size="40" data-validation="required" data-validation-error-msg-required="必須項目です" placeholder="（例）株式会社サンプル">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="temporaly text-input text-field">
+                <label class="text-field__label" for="email">メールアドレス<span class="marker--required">必須</span></label>
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label">
+                  <input id="email" type="email" class="mdc-text-field__input" aria-label="Label" name="会社名" size="40" data-validation="required" data-validation-error-msg-required="必須項目です" placeholder="（例）example@domain.com">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="temporaly text-input text-field">
+                <label class="text-field__label" for="tel">電話番号<span class="marker--required">必須</span></label>
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label">
+                  <input id="tel" type="tel" class="mdc-text-field__input" aria-label="Label" name="会社名" size="40" data-validation="required" data-validation-error-msg-required="必須項目です" placeholder="（例）00-0000-0000">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-field">
+                <label class="text-field__label" for="">はい or いいえの質問<span class="marker--required">必須</span></label>
+
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" type="radio" id="yesOrNo1" name="はいorいいえ" value="はい">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                  </div>
+                  <label for="yesOrNo1">はい</label>
+
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" type="radio" id="yesOrNo2" name="はいorいいえ" value="いいえ" checked>
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                  </div>
+                  <label for="yesOrNo2">いいえ</label>
+                </div>
+              </div>
+
+
+              <div class="text-field text-field--textarea">
+                <label class="text-field__label" for="question">お問い合わせ内容<span class="marker--optional">任意</span></label>
+                <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--no-label">
+                  <textarea id="question" class="mdc-text-field__input" rows="8" cols="40" aria-label="Label" placeholder="（例）どのくらいの返信率がありますか？"></textarea>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mdc-form-field">
+                <div class="mdc-checkbox">
+                  <input id="mailMag" type="checkbox" class="mdc-checkbox__native-control" name="メルマガ申込" value="希望する">
+                  <div class="mdc-checkbox__background">
+                    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                      <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                    </svg>
+                    <div class="mdc-checkbox__mixedmark"></div>
+                  </div>
+                </div>
+                <label for="mailMag">外国人採用についてのメールマガジン購読申込をする</label>
+              </div>
+
+              <div class="mdc-form-field">
+                <div class="temporaly mdc-checkbox">
+                  <input id="kojinjouhou" type="checkbox" class="mdc-checkbox__native-control" name="個人情報の取扱いに同意" value="同意する" data-validation="required" data-validation-error-msg="同意が必要です">
+                  <div class="mdc-checkbox__background">
+                    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                      <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                    </svg>
+                    <div class="mdc-checkbox__mixedmark"></div>
+                  </div>
+                </div>
+                <label for="kojinjouhou">個人情報の取扱い、およびサービス利用規約について同意する</label>
+
+              </div>
+
+
+              <div class="contact__form_wrapper--privacy">
+                <a href="https://goalist.co.jp/privacy/" target="_blank">個人情報の取扱いについて</a>
+                <a href="https://goalist.co.jp/service-agreement/" target="_blank">サービス利用規約</a>
+              </div>
+
+              <div class="contact__form_wrapper--btn">
+                <button value="送信" id="formSubmitButton" type="submit" class="mdc-button mdc-button--raised contact-button" data-mdc-auto-init="MDCRipple">送信する</button>
+              </div>
+            </form>
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- class, action, methodを変更しないでください -->
+<form class="formrun" action="https://form.run/api/v1/r/eryl7fp42ac5sq11e5bzav1j" method="post">
+  <!-- ↓自由に要素を追加・編集することができます -->
+  <div>
+    <label>お名前</label>
+    <input name="お名前" type="text">
+  </div>
+
+  <div>
+    <label>メールアドレス [必須]</label>
+    <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+    <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+  </div>
+
+  <div>
+    <label>お問い合わせ [必須]</label>
+    <textarea name="お問い合わせ" data-formrun-required></textarea>
+    <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+  </div>
+
+  <div>
+    <label>個人情報利用同意 [必須]</label>
+    <input type="checkbox" name="個人情報利用同意" data-formrun-required>
+    <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+  </div>
+
+  <!-- ボット投稿をブロックするためのタグ -->
+  <div class="_formrun_gotcha">
+    <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+    <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+    <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+  </div>
+
+  <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+</form>
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+      <div class="mdc-layout-grid__inner footer__about">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
+          <a class="footer-block__logo" href="/">
+            <img class="footer-block__material-logo" src="img/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
+          <p class="footer-block__description">footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。</p>
+          <ul class="footer__social-nav">
+            <li class="footer__social-nav__item"> <a href="https://www.github.com/material-components" target="_blank" rel="noopener" class="ffooter__social-nav__item__link" aria-label="Find us on GitHub">GitHub</a>
+            </li>
+            <li class="footer__social-nav__item"> <a href="https://www.twitter.com/materialdesign" target="_blank" rel="noopener" class="ffooter__social-nav__item__link" aria-label="Find us on Twitter">Twitter</a>
+            </li>
+            <li class="footer__social-nav__item"> <a href="https://www.youtube.com/googledesign" target="_blank" rel="noopener" class="ffooter__social-nav__item__link" aria-label="Find us on YouTube">YouTube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mdc-layout-grid__inner footer__legal">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
+          <a class="footer-block__logo" href="/">
+            <img class="footer-block__material-logo" src="img/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
+          <p class="footer-block__description">footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。footerに文章。</p>
+          <ul class="footer__legal-nav">
+            <li class="footer__legal-nav__item"> <a href="https://www.github.com/material-components" target="_blank" rel="noopener" class="ffooter__legal-nav__item__linkx" aria-label="Privacy Policy">Privacy Policy</a>
+            </li>
+            <li class="footer__legal-nav__item"> <a href="https://www.twitter.com/materialdesign" target="_blank" rel="noopener" class="ffooter__legal-nav__item__link" aria-label="Terms of Service">Terms of Service</a>
+            </li>
+            <li class="footer__legal-nav__item"> <a href="https://www.youtube.com/googledesign" target="_blank" rel="noopener" class="ffooter__legal-nav__item__link" aria-label="Feedback">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Dialogs: ダイアログ -->
+  <div id="mdc-dialog-1" class="mdc-dialog" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-content">
+    <div class="mdc-dialog__container">
+      <div class="mdc-dialog__surface">
+        <h2 class="mdc-dialog__title" id="my-dialog-title">ダイアログのタイトル</h2>
+        <div class="mdc-dialog__content" id="my-dialog-content">
+          <div class="mdc-grid-list mdc-grid-list--twoline-caption mdc-grid-list--with-icon-align-start">
+            <ul class="mdc-grid-list__tiles">
+              <li class="mdc-grid-tile">
+                <div class="mdc-grid-tile__primary">
+                  <img class="mdc-grid-tile__primary-content" src="img/image.svg" />
+                </div>
+                <span class="mdc-grid-tile__secondary">
+                  <i class="mdc-grid-tile__icon material-icons">star_border</i>
+                  <span class="mdc-grid-tile__title">ダイアログ内のグリッドリストタイトル</span>
+                  <span class="mdc-grid-tile__support-text">ダイアログ内のグリッドリスト詳細文章</span>
+                </span>
+              </li>
+              <li class="mdc-grid-tile">
+                <div class="mdc-grid-tile__primary">
+                  <img class="mdc-grid-tile__primary-content" src="img/image.svg" />
+                </div>
+                <span class="mdc-grid-tile__secondary">
+                  <i class="mdc-grid-tile__icon material-icons">star_border</i>
+                  <span class="mdc-grid-tile__title">ダイアログ内のグリッドリストタイトル</span>
+                  <span class="mdc-grid-tile__support-text">ダイアログ内のグリッドリスト詳細文章</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer class="mdc-dialog__actions">
+          <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="close">
+            <span class="mdc-button__label">閉じる</span>
+          </button>
+        </footer>
+      </div>
+    </div>
+    <div class="mdc-dialog__scrim"></div>
+  </div>
+
+  <script src="https://unpkg.com/material-components-web@0.44.1/dist/material-components-web.min.js"></script>
+  <!-- カルーセル -->
+  <script src="https://unpkg.com/@glidejs/glide@3.2.6/dist/glide.js"></script>
+  <!-- バリデーション -->
+  <script src="js/contact.js"></script>
+  <!-- フォームラン -->
+  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    window.mdc.autoInit();
+  </script>
+</body>
+
+</html>

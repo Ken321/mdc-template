@@ -1,0 +1,155 @@
+// compileOnSave, compileCompressed
+@import "./variables";
+/*======================
+ ヘッダー
+======================*/
+.header__title {
+  display: block;
+  text-align: left;
+  margin: 0 0 0 24px;
+
+  img {
+    width: auto;
+    height: 22px;
+  }
+}
+
+.header-nav {
+  &__item {
+    margin: 0 8px 0 0;
+    text-decoration: none;
+    color: rgba(#fff,0.5);
+
+    &:hover {
+      color: rgba(#fff,0.9);
+    }
+  }
+}
+/*======================
+ 共通
+======================*/
+.section-header {
+  padding: 48px 0;
+
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+/*======================
+ ページトップ
+======================*/
+.top-panel {
+  padding-top: 64px;
+
+  &__title {
+    font-size: 3rem;
+    margin: 0 0 24px;
+  }
+
+  &__points {
+    display: flex;
+    margin: 0 0 24px;
+  }
+
+  &__cta {}
+}
+/*======================
+ セクション２
+======================*/
+.section2 {
+  &__box {
+    &__headline {
+      text-align: center;
+    }
+
+    &__image {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}
+
+.mdc-layout-grid__inner--reverse {
+  .mdc-layout-grid__cell:nth-child(1) {
+    order: -1;
+  }
+
+  .mdc-layout-grid__cell:nth-child(2) {
+    order: -2;
+  }
+
+  .mdc-layout-grid__cell:nth-child(3) {
+    order: -3;
+  }
+
+  .mdc-layout-grid__cell:nth-child(4) {
+    order: -4;
+  }
+}
+/*======================
+ セクション３
+======================*/
+.content {
+  display: none;
+}
+
+.content--active {
+  display: block;
+}
+
+.glide__slide {
+  border-radius: 0.16667em;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  color: #fff;
+  background: linear-gradient(-45deg,#ed145b,#7b31f4);
+  font-size: 1em;
+  font-weight: 900;
+}
+/*======================
+ フッター
+======================*/
+.footer {
+  &__about {
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    padding: 32px 0;
+  }
+  &__social-nav {
+    display: inline-flex;
+
+    &__item {
+      &:after {
+        content: '/';
+        margin: 0 8px;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+  &__legal {
+    padding: 32px 0;
+    &-nav {
+      display: inline-flex;
+
+      &__item {
+        &:after {
+          content: '';
+          margin: 0 8px;
+        }
+
+        &:last-child:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
