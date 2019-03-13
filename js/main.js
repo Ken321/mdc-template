@@ -31,13 +31,13 @@ window.addEventListener('scroll', function() {
 
 // タブ
 const tabBar = new mdc.tabBar.MDCTabBar(document.querySelector('.mdc-tab-bar'));
-const contentEls = document.querySelectorAll('.content');
+const contentEls = document.querySelectorAll('.tab-content');
 
 tabBar.listen('MDCTabBar:activated', function(event) {
-  // Hide currently-active content
-  document.querySelector('.content--active').classList.remove('content--active');
+  // Hide currently-active tab-conetnt
+  document.querySelector('.tab-content--active').classList.remove('tab-content--active');
   // Show content for newly-activated tab
-  contentEls[event.detail.index].classList.add('content--active');
+  contentEls[event.detail.index].classList.add('tab-content--active');
 });
 
 
@@ -87,3 +87,10 @@ document.querySelector('#open-dialog-1').addEventListener('click', function(evt)
 const textFields = [].map.call(document.querySelectorAll('.mdc-text-field'), function(el) {
   return new mdc.textField.MDCTextField(el);
 });
+
+// セレクト
+const select = new mdc.select.MDCSelect(document.querySelector('.mdc-select'));
+
+// select.listen('MDCSelect:change', () => {
+//   alert(`Selected option at index ${select.selectedIndex} with value "${select.value}"`);
+// });

@@ -3,6 +3,15 @@
 /*======================
  ヘッダー
 ======================*/
+.mdc-top-app-bar {
+  background-color: transparent;
+  transition: all 0.2s ease;
+
+  &.scrolled {
+    background-color: #fff;
+  }
+}
+
 .header__title {
   display: block;
   text-align: left;
@@ -15,13 +24,17 @@
 }
 
 .header-nav {
+  @include mq-down(xs) {
+    display: none;
+  };
+
   &__item {
     margin: 0 8px 0 0;
     text-decoration: none;
-    color: rgba(#fff,0.5);
+    color: rgba(#000,0.5);
 
     &:hover {
-      color: rgba(#fff,0.9);
+      color: rgba(#000,0.9);
     }
   }
 }
@@ -29,30 +42,56 @@
  共通
 ======================*/
 .section-header {
-  padding: 48px 0;
-
-  h2 {
-    font-size: 1.6rem;
+  &__title {
+    font: $h2;
     text-align: center;
   }
+
+  &__lede {
+    text-align: center;
+  }
+}
+
+.layout-margin {
+  margin-bottom: 72px;
+  margin-top: 72px;
+}
+
+.mdc-button {
+  &--large {
+    height: 60px;
+    padding: 0 36px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  &--x-large {}
 }
 /*======================
  ページトップ
 ======================*/
-.top-panel {
+.main-visual {
   padding-top: 64px;
+  min-height: 717px;
+  background-color: $theme-color;
 
-  &__title {
-    font-size: 3rem;
-    margin: 0 0 24px;
+  &__unit {
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    &__title {
+      font: $h1;
+      margin: 0 0 24px;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    &__cta {}
   }
-
-  &__points {
-    display: flex;
-    margin: 0 0 24px;
-  }
-
-  &__cta {}
 }
 /*======================
  セクション２
@@ -60,16 +99,20 @@
 .section2 {
   &__box {
     &__headline {
+      font: $h4;
       text-align: center;
+      margin-bottom: 16px;
     }
 
     &__image {
       display: block;
-      margin: 0 auto;
+      width: 120px;
+      margin: 0 auto 16px;
     }
 
     &__text {
       text-align: center;
+      padding: 0 24px;
     }
   }
 }
@@ -92,25 +135,394 @@
   }
 }
 /*======================
+ セクション２b
+======================*/
+.section-arrow {
+  position: relative;
+
+  &:before {
+    font-family: "Material Icons";
+    content: "arrow_drop_down";
+    display: block;
+    position: absolute;
+    line-height: 100px;
+    font-size: 100px;
+    left: 50%;
+    top: -80px;
+    margin-left: -50px;
+  }
+}
+
+.section2b {
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 400px;
+      max-width: 100%;
+    }
+  }
+}
+/*======================
  セクション３
 ======================*/
-.content {
+.section3 {
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    &__headline {
+      font: $h3;
+    }
+
+    &__text {}
+  }
+}
+/*======================
+ セクション４
+======================*/
+.section4 {
+  &__box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__image {
+      margin: 16px;
+      width: 72px;
+    }
+
+    &__text {
+      margin: 12px 0;
+    }
+  }
+}
+/*======================
+ セクションタブ
+======================*/
+.tab-content {
   display: none;
+
+  &--active {
+    display: block;
+  }
+
+  &__header h3 {
+    font: $h3;
+    text-align: center;
+  }
+}
+/*======================
+ セクション５（グリッド）
+======================*/
+.section-carousel {
+  .glide {
+    width: calc(100% + (var(--mdc-layout-grid-margin-desktop, 24px)) * 2);
+    margin: 0 -24px;
+
+    &__slide {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__arrow {
+      position: absolute;
+      display: block;
+      top: 50%;
+      z-index: 2;
+      color: white;
+      text-transform: uppercase;
+      padding: 9px 12px;
+      background-color: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 25px;
+      width: 50px;
+      height: 50px;
+      box-shadow: none;
+      text-shadow: none;
+      opacity: 1;
+      cursor: pointer;
+      transition: opacity 150ms ease, border 300ms ease-in-out;
+      transform: translateY(-50%);
+      line-height: 1;
+
+      &--left {
+        i {
+          margin-left: -1px;
+        }
+      }
+    }
+  }
+}
+/*======================
+ 料金
+======================*/
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  &__heading {
+    display: block;
+    width: 100%;
+    padding: 24px;
+    background: #ddd;
+    text-align: center;
+    color: #fff;
+    font: $h4;
+
+    .pricing-card--one & {
+      background: $theme-color;
+    }
+
+    .pricing-card--two & {
+      background: $sub-color;
+    }
+
+    .pricing-card--three & {
+      background: darken($theme-color, 20%);
+    }
+  }
+
+  &__header {
+    font-weight: bold;
+    padding: 24px 0;
+    border-bottom: solid 1px #ddd;
+
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  &__detail {
+    padding: 24px 0;
+    max-width: 80%;
+
+    p {
+      margin: 0 0 8px;
+    }
+  }
+}
+/*======================
+ 導入実績
+======================*/
+.users-box {
+  margin: 16px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+/*======================
+活用事例
+======================*/
+.case-study-card {
+  --mdc-layout-grid-gutter-desktop: 16px;
+  padding: 24px;
+  margin: 0 0 24px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__name {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 0 0 8px 16px;
+  }
+
+  &__headline {
+    font: $h4;
+    margin: 0 0 16px 16px;
+  }
+
+  &__text {
+    border-top: solid 1px #ddd;
+    margin: 0 0 0 16px;
+    padding: 16px 0;
+  }
+}
+/*======================
+ モックアップと特徴
+======================*/
+.mockup {
+  align-items: center;
+  &__image {
+    max-height: 500px;
+    overflow: hidden;
+    img {
+      width: 400px;
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+      height: auto;
+    }
+  }
+  &__content {
+    margin: 32px 0 0;
+  }
+}
+/*======================
+ テーブル
+======================*/
+$g-radius: 16px;
+.grid-table {
+  display: grid;
+  width: calc(100% - 10px);
+  grid-auto-rows: auto;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  margin: 16px 0 32px;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-radius: $g-radius;
+  @media screen and (max-width: 736px) {
+    grid-auto-columns: auto;
+  }
+
+  &__item {
+    padding: 16px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    align-items: center;
+    line-height: 1;
+    @include mq-down(xs) {
+      grid-column: 1 / 3;
+    }
+
+    &:nth-child(1) {
+      border-radius: $g-radius 0 0 0;
+    }
+
+    &:nth-child(5) {
+      border-radius: 0 $g-radius 0 0;
+    }
+
+    &:nth-last-child(5) {
+      border-radius: 0 0 0 $g-radius;
+    }
+
+    &:last-child {
+      border-radius: 0 0 $g-radius 0;
+    }
+
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+}
+/*======================
+ 問い合わせへの動線
+======================*/
+.section-cta {
+  padding: 32px 0;
+  background: #fafafa;
+
+  .cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__headline {
+      font: $h4;
+      margin: 0 0 16px;
+    }
+  }
+}
+/*======================
+ お問い合わせ
+======================*/
+.contact-form {
+  .text-field {
+    position: relative;
+
+    &__label {
+      display: block;
+
+      > .marker {
+        &--required {
+          font-size: 0.8rem;
+          line-height: 1.4rem;
+          background: #E5421E;
+          padding: 4px;
+          margin-left: 4px;
+          color: #fff;
+          border-radius: 4px;
+          vertical-align: text-bottom;
+        }
+      }
+    }
+  }
+
+  .mdc-radio {
+    margin-bottom: 24px;
+
+    & + label {
+      margin-bottom: 24px;
+    }
+  }
+
+  .mdc-checkbox {
+    margin-bottom: 24px;
+
+    & + label {
+      margin-bottom: 24px;
+    }
+  }
+
+  .mdc-text-field {
+    width: 100%;
+    margin: 8px 0 24px;
+  }
+
+  .mdc-select {
+    min-width: 14rem;
+  }
 }
 
-.content--active {
+.help-block {
+  position: absolute;
+  top: 24px;
+  left: auto;
+  right: 8px;
+  background: #fff;
+  padding: 0 16px;
+}
+
+.formrun-system-show {
+  position: absolute;
+  right: 8px;
+  top: -12px;
+  background: #fff;
   display: block;
-}
+  padding: 0 8px;
+  z-index: 2;
 
-.glide__slide {
-  border-radius: 0.16667em;
-  text-align: center;
-  height: 150px;
-  line-height: 150px;
-  color: #fff;
-  background: linear-gradient(-45deg,#ed145b,#7b31f4);
-  font-size: 1em;
-  font-weight: 900;
+  .mdc-checkbox & {
+    right: auto;
+    left: 36px;
+  }
 }
 /*======================
  フッター
@@ -120,6 +532,7 @@
     border-bottom: 1px solid rgba(0,0,0,.12);
     padding: 32px 0;
   }
+
   &__social-nav {
     display: inline-flex;
 
@@ -137,6 +550,7 @@
 
   &__legal {
     padding: 32px 0;
+
     &-nav {
       display: inline-flex;
 

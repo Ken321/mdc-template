@@ -56,7 +56,7 @@
   function validateItem(ele, focus) {
     let type = ele.getAttribute("type");
     let error = validate(type, ele);
-    let itemGroup = closestParent(ele, "temporaly");
+    let itemGroup = closestParent(ele, "text-field");
     removePreviousError(itemGroup);
 
 

@@ -27,15 +27,21 @@ $breakpoint-down: (
     @content;
   }
 }
+
 $theme-color: #f57807; // テーマカラー
 $sub-color: #008ab5; // サブカラー
+$h1: normal normal bold 4rem/1.2 "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+$h2: normal normal bold 2.6rem/1.4 "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+$h3: normal normal bold 1.8rem/1.4 "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+$h4: normal normal bold 1.2rem/1.4 "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Avenir", "texgyreadventor", "Helvetica Neue", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif" !important;
+  font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
   margin: 0;
   color: #333;
   line-height: 1.8;
@@ -127,7 +133,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
