@@ -528,22 +528,51 @@ $g-radius: 16px;
  フッター
 ======================*/
 .footer {
+  .mdc-layout-grid__cell--span-12 {
+    text-align: center;
+  }
+
   &__about {
     border-bottom: 1px solid rgba(0,0,0,.12);
     padding: 32px 0;
+
+    &__logo {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__social-nav {
     display: inline-flex;
+    margin: 0 auto;
+    border: solid 1px #ddd;
 
     &__item {
-      &:after {
-        content: '/';
-        margin: 0 8px;
+      border-right: solid 1px #ddd;
+
+      &:last-child {
+        border: none;
       }
 
-      &:last-child:after {
-        display: none;
+      &__link {
+        display: block;
+        padding: 16px 40px;
+        line-height: 1;
+        text-decoration: none;
+        color: #333;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      img {
+        display: block;
+        width: 32px;
+        height: auto;
+        margin: 0 auto 8px;
       }
     }
   }
@@ -555,13 +584,12 @@ $g-radius: 16px;
       display: inline-flex;
 
       &__item {
-        &:after {
-          content: '';
-          margin: 0 8px;
-        }
-
-        &:last-child:after {
-          display: none;
+        &__link {
+          display: block;
+          padding: 16px;
+          line-height: 1;
+          text-decoration: none;
+          color: #333;
         }
       }
     }
